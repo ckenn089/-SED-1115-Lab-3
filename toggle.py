@@ -4,4 +4,7 @@ sw5 = Pin(13, Pin.IN, Pin.PULL_DOWN)
 
 while True:
 	if sw5.value() == 1:
-		led1.toggle()
+		if sw5.value() == 0:
+			led1.toggle()
+
+
